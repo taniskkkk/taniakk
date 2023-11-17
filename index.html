@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c0794752e4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Portfolio-logos_white1.png" width="50" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Software Dev</p>
+            <h1>HI, I'm <span>Tanisk</span><br>Jain From srm</h1>
+        </div>
+    </div>
+</div>
+<!-- about -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Screenshot 2023-10-28 151022.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am Taniks Jain aged 19 years from Bhopal,Madhya Pradesh.Currently living in Chennai,India.I am 
+                    currently studying in II year, purisng BTech from SRM University of Science & Technology,Kattankulathur
+                    and will get graduate in Mat 2026.Throughout this academic career,I have learned many programming languages like C,C++,Python,Java and took 
+                    part in various research workshops.I finished C and Python in my school time and worked on a lot of Project on C,C++,Python,Java and Web dev.
+                    I have received many certificates for CS50 Harvard and Hackathons.I resolved a lot problems on coding platforms like Hackerrank,
+                    LeetCode,CodeTantra and ELab.a passionate and dedicated individual with a keen interest in problem-solving and software development. With a strong foundation in Data Structures and Algorithms, I am driven by the desire to create impactful solutions and contribute to the ever-evolving tech industry.
+
+
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('exp')">Experience</p>
+                    <p class="tab-links" onclick="opentab('edu')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Project Management</span></li>
+                        <li><span>Programming:</span><br>My successes on platforms like HackerRank, CodeChef, and LeetCode illustrate my proficiency in programming languages and my capacity to implement efficient solutions.</li>
+                        <li><span>Data Structures and Algorithms</span>My notable ranking in SRM eLab DSA and my adept handling of related challenges reveal my solid grasp of fundamental data structures and algorithmic principles.</li>
+                        <li><span>Continuous Learning:</span><br>My pursuit of challenges and experiences, alongside my drive for self-improvement, reflects my commitment to continuous learning and growth within the ever-evolving technology sector.</li>
+                        
+
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="exp">
+                    <ul>
+                        <li><span>2021-2022</span><br>Assistant Lecturer</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="edu">
+                    <ul>
+                        <li><span>2022</span><br>Programming & Coding Technology at DMatics </li>
+                        <li><span>2026</span><br>BTech from SRMIST KTR Chennai</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------services--------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Algorithmic Solutions:</h2>
+                <p>lgorithmic Solutions: Leveraging your proficiency in various algorithms, you can provide effective solutions to complex computational problems, ensuring optimized and efficient outcomes.
+                    Data Structure Optimization: Drawing from your strong understanding of data structures, you can offer optimization strategies for data management, enhancing the performance and scalability of various applications and systems.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Algorithmic Consulting and Analysis:</h2>
+                <p>Algorithmic Consulting and Analysis: With your knowledge in algorithm design and analysis, you can provide expert consultation and analysis on algorithmic approaches, guiding the implementation of efficient and reliable solutions for intricate technical challenges.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-intercom"></i>
+                <h2>Training and Workshops: </h2>
+                <p>Training and Workshops: By sharing your expertise through specialized training and workshops, you can empower and educate individuals on fundamental DSA concepts and their practical applications, fostering a stronger understanding of these critical principles.
+                    Problem-Solving Mentorship: Through mentorship programs, you can guide aspiring individuals in honing their problem-solving skills, equipping them with the necessary tools and strategies to excel in the realm of Data Structures and Algorithms.
+                    </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- --------------JS---------------- -->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<!-- ------------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.png">
+                <div class="layer">
+                    <h3>Netflix Clone</h3>
+                    <p>Near prefect clone of everyone's favourite OTT platform Netflix using HTML,CSS.</p>
+                    <a href="https://github.com//NETFLIX_CLONE"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-2.png">
+                <div class="layer">
+                    <h3>Advanced Matrix Calculator</h3>
+                    <p>Calculator made for solving difficult matrix problem in no time due to mutliple functions and 
+                        reduced time and space complexity which is completely created in both C and C++ programming languages.</p>
+                    <a href="https://github.com//projec_cpp/blob/main/OOPD%20PROJECT.cpp"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-3.png">
+                <div class="layer">
+                    <h3>Voice Recognised Assistant</h3>
+                    <p>A voice regnoised assistant connected to internet via google server completely at your service using Advanced OOP Python.</p>
+                    <a href="https://github.com//Virtual-_Assistant"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!-- ---------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>goswamidevraj14@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i>+91 9770103110</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com/__.devraj_goswami_?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/devraj-goswami-bb7314252/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Devrajj-14"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="devraj resume.png" download="" class="btn btn2">Download Resume/CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="EMail" placeholder="Your EMail" required>
+                    <textarea name="Message" rows="10" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Devraj. Made with Love and Protein.</p>
+    </div>
+</div>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw02R53l6r9X03zj3D8weDGOBS-gDaES-RY0ibWxnjaV3rRmraKFBnx517OERzW4ATkNQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  
+</body>
+</html>
